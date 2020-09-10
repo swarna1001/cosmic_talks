@@ -24,20 +24,16 @@
     </a>
 </div>
 
-<section id="heading">
-    <h1 class="h-primary">Cosmic Talks </h1>
-    
+<section id="home">
+    <h1 class="h-primary">Cosmic Talks</h1>
+    <p>A blogging site dedicated to the wonders of the space!</p>
+
     
 </section>
 
 
-
-
-
-
-
-
-<div class="articles">
+<section id=content>
+    <div class="articles">
     {% for article in articles %}
     <div class="article">
         <h2><a href="{% url 'articles:detail' slug=article.slug %}"> {{ article.title }} </a></h2>
@@ -47,6 +43,8 @@
     {% endfor %}
 
 </div>
+    
+</section>
 
 </body>
 </html>

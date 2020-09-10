@@ -1,9 +1,12 @@
 body{
-    background-color: #010820;
+
+    /*background: white url(images/background2.jpg) no-repeat center;*/
+    background: white
+    
 }
 
 h1 {
-    color: white;
+    color: red;
     
 }
 
@@ -56,6 +59,45 @@ h1 {
  	width: 0px;
  }
 
- 
+#home{
+	display: flex;
+	flex-direction: column;
+	padding: 3px 200px;
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(images/background2.jpg) no-repeat center center/cover;
+    height: 320px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+	color: red;
+	text-align: center;
+	margin-bottom: 5px;
+	font-family: 'Bree Serif', 'serif';
+}
+
+#home p{
+	color: black;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 1px;
+}
+
+
 
 
