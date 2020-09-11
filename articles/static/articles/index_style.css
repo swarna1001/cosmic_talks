@@ -2,6 +2,9 @@ body{
 
     /*background: white url(images/background2.jpg) no-repeat center;*/
     background: white
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
     
 }
 
@@ -25,7 +28,7 @@ h1 {
  }
 
  .search-box:hover > .search-txt{
- 	width: 350px;
+ 	width: 200px;
  	padding: 0 6px;
  }
 
@@ -59,45 +62,67 @@ h1 {
  	width: 0px;
  }
 
-#home{
+/*--------------------------------*/
+
+/* content box styling */
+#services{
+	margin: 34px;
 	display: flex;
-	flex-direction: column;
-	padding: 3px 200px;
-	height: 400px;
-	justify-content: center;
-	align-items: center;
 }
 
-#home::before{
-    content: "";
-    position: absolute;
-    background: url(images/background2.jpg) no-repeat center center/cover;
-    height: 320px;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.89;
+#services .box{
+	border: 2px solid brown;
+	padding: 34px;
+	margin: 2px 55px;
+	border-radius: 28px;
+	background: #f2f2f2;
+	margin-left: 20px;
 }
 
-#home h1{
-	color: red;
-	text-align: center;
-	margin-bottom: 5px;
+#services .box p{
 	font-family: 'Bree Serif', 'serif';
 }
 
-#home p{
-	color: black;
+
+.hero-image{
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+	background: url(images/background2.jpg) no-repeat center;
+	background-size: cover;
+	z-index: -1;
+	opacity: 0.89;
+}
+
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
 	text-align: center;
-	font-size: 1.5rem;
+	color: white;
+	font-weight: 700;
 }
 
-.h-primary{
-    font-size: 3.8rem;
-    padding: 1px;
+.container h1{
+	font-size: 72px;
+	letter-spacing: 0.1em;
+	margin-top: 150px;
 }
 
+.container h1 span{
+	border: 10px solid white;
+	padding: 6px 14px;
+	display: inline-block;
+}
+
+.des{
+	margin: 20px;
+	display: block;
+	font-size: 26px;
+	text-shadow: 0 0 10px black;
+}
 
 
 
