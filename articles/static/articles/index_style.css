@@ -28,7 +28,7 @@ h1 {
  }
 
  .search-box:hover > .search-txt{
- 	width: 200px;
+ 	width: 150px;
  	padding: 0 6px;
  }
 
@@ -87,6 +87,7 @@ h1 {
 .hero-image{
 	position: relative;
 	height: 500px;
+	
 	overflow: hidden;
 	background: url(images/background2.jpg) no-repeat center;
 	background-size: cover;
@@ -120,7 +121,7 @@ h1 {
 .des{
 	margin: 20px;
 	display: block;
-	font-size: 26px;
+	font-size: 30px;
 	text-shadow: 0 0 10px black;
 }
 
