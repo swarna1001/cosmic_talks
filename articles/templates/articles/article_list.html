@@ -6,9 +6,13 @@
     <!-- loads the path to your static files -->
     {% load static %}
     <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>Cosmic_talks</title>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--<script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
     <link rel="stylesheet" type="text/css" href="{% static 'articles/index_style.css' %}"/>
 
 
@@ -16,40 +20,93 @@
 
 <body>
 
-<!-- q is the variable storing the search objects -->
-<div class="search-box">
-    <input class="search-txt" type="text" name="q" placeholder="search">
-    <a class="search-btn" href="#">
-        <i class="fas fa-search"></i>
-    </a>
-</div>
+    <!--wrapper start-->
+        <div class="wrapper">
+            <!--header menu start-->
+            <div class="header">
+                <div class="header-menu">
+                    <!--<div class="title">Cosmic <span>Talks</span></div> -->
+                    <div class="sidebar-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul>
+                        <li><div class="search-box">
+                                <input class="search-txt" type="text" name="q" placeholder="search">
+                                    <a class="search-btn" href="#">
+                                    <i class="fas fa-search"></i>    </a>
+                            </div></li>
+                        <!--<li><a href="#">Signup</a></li>
+                        <li><a href="#">Sign In</a></li> -->
+                    </ul>
+                </div>
+            </div>
 
-<!-- banner -->
-<div class="hero-image">
-    <div class="container">
-        <h1> <span>Cosmic Talks</span></h1>
-        <span class="des">A blogging site dedicated to the wonders of the space!</span>
-        
-    </div>
-    
-</div>
-                
-<!-- for displaying articles -->
+<!--header menu end-->
+            <!--sidebar start-->
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                    <center class="profile">
+                        <img src="images/1.jpg" alt="">
+                        <p>Jessica</p>
+                    </center>
 
-<section id="services-container">
-    <div id="services">
-        <div class="box">
-            <h2 class="h-secondary center">Food </h2>
-            <p class="center"> hjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj, hhhhhhhhhhh
-            hhhhhhhh, hhhhhhhhhhhhhhhh, hjhjhjhk</p>
-            
+                    <li class="item">
+                        <a href="#" class="menu-btn">
+                            <i class="fas fa-desktop"></i><span>Home</span>
+                        </a>
+                    </li>
+
+<li class="item" id="profile">
+                        <a href="#profile" class="menu-btn">
+                            <i class="fas fa-book"></i><span>Categories <i class="fas fa-chevron-down drop-down"></i></span>
+                        </a>
+                        <div class="sub-menu">
+                            <a href="#"><i class="fas fa-newspaper"></i><span>Catergory-1</span></a>
+                            <a href="#"><i class="fas fa-newspaper"></i><span>Catergory-2</span></a>
+                        </div>
+                    </li>
+
+<li class="item">
+                        <a href="#" class="menu-btn">
+                            <i class="fas fa-info-circle"></i><span>About</span>
+                        </a>
+                    </li>
+
+
+</div>
+            </div>
+            <!--sidebar end-->
+            <!--main container start-->
+            <div class="main-container">
+                <div class="card">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+                <div class="card">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+                <div class="card">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+            </div>
+            <!--main container end-->
         </div>
-        
-    </div>
-    
-</section>
+        <!--wrapper end-->
 
-<section id=content>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(".sidebar-btn").click(function(){
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+        </script>
+
+
+
+ 
+
+
+
+<!--<section id=content>
     <div class="articles">
     {% for article in articles %}
     <div class="article">
@@ -58,10 +115,11 @@
         <p>{{ article.date }}</p>
     </div>
     {% endfor %}
-
-</div>
+    </div>
     
-</section>
+    </section> -->
 
+
+  
 </body>
 </html>
