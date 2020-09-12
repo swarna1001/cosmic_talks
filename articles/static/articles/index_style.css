@@ -86,7 +86,7 @@ body{
   position: fixed;
   top: 70px;
   width: 250px;
-  height: calc(100% - 9%);
+  height: 100%;
   transition: 0.3s;
   transition-property: width;
   overflow-y: auto;
@@ -178,7 +178,7 @@ body{
   margin-top: 70px;
   margin-left: 250px;
   padding: 15px;
-  background: url(images/background2.jpg)no-repeat;
+  background: url(images/background.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
   transition: 0.3s;

@@ -75,9 +75,8 @@
 
 </div>
             </div>
-            <!--sidebar end-->
-            <!--main container start-->
-            <div class="main-container">
+            
+            <!--<div class="main-container">
                 <div class="card">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
@@ -88,9 +87,24 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 </div>
             </div>
-            <!--main container end-->
-        </div>
-        <!--wrapper end-->
+            
+        </div> -->
+        
+        <!--sidebar end-->
+            <!--main container start-->
+
+        <div class="main-container">
+    {% for article in articles %}
+    <div class="card">
+        <h2><a href="{% url 'articles:detail' slug=article.slug %}"> {{ article.title }} </a></h2>
+        <p>{{ article.snippet }}</p>
+        <p>{{ article.date }}</p>
+    </div>
+    <!--main container end-->
+    {% endfor %}
+    </div>
+    <!--wrapper end-->
+    
 
         <script type="text/javascript">
         $(document).ready(function(){
@@ -101,25 +115,5 @@
         </script>
 
 
-
- 
-
-
-
-<!--<section id=content>
-    <div class="articles">
-    {% for article in articles %}
-    <div class="article">
-        <h2><a href="{% url 'articles:detail' slug=article.slug %}"> {{ article.title }} </a></h2>
-        <p>{{ article.snippet }}</p>
-        <p>{{ article.date }}</p>
-    </div>
-    {% endfor %}
-    </div>
-    
-    </section> -->
-
-
-  
 </body>
 </html>
