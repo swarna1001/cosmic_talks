@@ -99,11 +99,27 @@
         <h2><a href="{% url 'articles:detail' slug=article.slug %}"> {{ article.title }} </a></h2>
         <p>{{ article.snippet }}</p>
         <p>{{ article.date }}</p>
-    </div>
+    </div> 
     <!--main container end-->
     {% endfor %}
-    </div>
+    </div> 
     <!--wrapper end-->
+
+<!--<div class="main-container">
+    {% for article in articles %}
+    <div class="card">
+  <div class="card-text">
+    <span class="content-title"><a href="{% url 'articles:detail' slug=article.slug %}"> {{ article.title }} </a></span>
+    <p>{{ article.snippet }}</p>
+    <p class="content-date">{{ article.date }}</p>
+  </div>
+  
+   
+  </div>
+  {% endfor %}
+</div> -->
+
+</div>
     
 
         <script type="text/javascript">
