@@ -30,17 +30,6 @@ body{
   padding: 0 20px;
 }
 
-/*.wrapper .header .header-menu .title{
-  color: #fff;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-.wrapper .header .header-menu .title span{
-  color: #4CCEE8;
-}*/
-
 .wrapper .header .header-menu .sidebar-btn{
   color: #fff;
   position: absolute;
@@ -59,26 +48,6 @@ body{
 .wrapper .header .header-menu ul{
   display: flex;
 }
-
-/*.wrapper .header .header-menu ul li a{
-  background: #fff;
-  color: #000;
-  display: block;
-  margin: 0 10px;
-  font-size: 18px;
-  width: 34px;
-  height: 34px;
-  line-height: 35px;
-  text-align: center;
-  border-radius: 50%;
-  transition: 0.3s;
-  transition-property: background, color;
-}
-
-.wrapper .header .header-menu ul li a:hover{
-  background: #4CCEE8;
-  color: #fff;
-}*/
 
 .wrapper .sidebar{
   z-index: 1;
@@ -181,7 +150,8 @@ body{
   background: white;
   background: url(images/nate.jpg) no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: auto;
+  overflow-y: auto;
   transition: 0.3s;
 }
 
@@ -204,11 +174,9 @@ body{
   padding-left: 3px;
 }
 
-
 .wrapper.collapse .main-container{
   width: calc(100% - 70px);
-  margin-left: 70px;
-  
+  margin-left: 70px;  
 }
 
 .wrapper.collapse .main-container .card{
@@ -216,23 +184,18 @@ body{
 }
 
 .wrapper .main-container .card{
- 
   padding: 15px;
-
   margin-bottom: 50px;
   margin-left: 8.1%;
   margin-top: 10%;
   margin-right: 2%;
-
 } 
 
 .wrapper .banner{
-
   width: (100% - 250px);
   height: 350px;
   background: url(images/bryan.jpg) no-repeat;
   background-size: cover;
-
   margin-top: 70px;
   margin-left: 250px;
   padding: 30px;
@@ -241,22 +204,17 @@ body{
   transition: 0.3s;
 }
 
-
 .wrapper .banner .banner-heading{
   padding-top: 70px;
-  
   text-align: center;
   font-size: 72px;
   letter-spacing: 0.1em;
-
-
 }
+
 .wrapper.collapse .banner{
   width: calc(100% - 70px);
   margin-left: 70px;
-  
-}
-  
+} 
 
 .banner .des{
   margin: 20px;
@@ -269,7 +227,6 @@ body{
   text-shadow: 0 0 10px black;
 }
 
-
 /* search bar styling */
 
 .search-box{
@@ -280,7 +237,6 @@ body{
 	background: #2f3640;
 	border-radius: 30px;
 	padding: 10px;
-
  }
 
  .search-box:hover > .search-txt{
@@ -318,49 +274,23 @@ body{
  	width: 0px;
  }
 
-
- /* -------------------------------- */
-
-
-
-
+/* Content cards styling */
 
  .card {
   display: inline-grid;
-  /*grid-template-columns: 300px;
-  grid-template-rows: 210px;
-  grid-template-areas: "text";*/
-
-
   width: 250px;
   height: 200px;
-
-
   border-radius: 18px;
   background: white;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   font-family: roboto;
   text-align: center;
-
-  /*padding: 15px;
-  margin-bottom: 10px;*/
-
 }
-
-
-/*.card-text {
-  grid-area: text;
-}
-.card-stats {
-  grid-area: stats; 
-}*/
-
-
 
 .card-text {
-  /*grid-area: text;*/
   margin: 25px;
 }
+
 .card-text .content-title {
   color: rgb(255, 7, 110);
   font-size: 12px;
@@ -369,7 +299,6 @@ body{
 .card-text .content-date{
   color: blue;
   font-size: 20px;
-
 }
 
 .card-text p {
@@ -382,39 +311,13 @@ body{
   font-size:28px;
 }
 
-/*.card-stats {
-  grid-area: stats; 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background: rgb(255, 7, 110);
-}
-
-.card-stats .stat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  color: white;
-  padding:10px;
-} */
-
 .card:hover {
   transform: scale(1.15);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
 .card {
-
 ...
   transition: 0.5s ease;
   cursor: pointer;
   margin:30px;
 }
-
-
-
-
