@@ -177,7 +177,7 @@ body{
   width: (100% - 250px);
   margin-top: 70px;
   margin-left: 250px;
-  padding: 15px;
+  padding: 30px;
   background: url(images/background.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
@@ -210,10 +210,18 @@ body{
   
 }
 
+.wrapper.collapse .main-container .card{
+  margin-left: 10%;
+}
+
 .wrapper .main-container .card{
  
   padding: 15px;
-  margin-bottom: 10px;
+
+  margin-bottom: 50px;
+  margin-left: 8.1%;
+  margin-top: 10%;
+  margin-right: 2%;
 
 } 
 
@@ -232,7 +240,7 @@ body{
  }
 
  .search-box:hover > .search-txt{
- 	width: 250px;
+ 	width: 150px;
  	padding: 0 6px;
  }
 
