@@ -13,7 +13,7 @@ body{
 
 .wrapper .header{
   z-index: 1;
-  background: #042331;
+  background: #17252A;
   position: fixed;
   width: calc(100% - 0%);
   height: 70px;
@@ -51,7 +51,7 @@ body{
 
 .wrapper .sidebar{
   z-index: 1;
-  background: #042331;
+  background: #17252A;
   position: fixed;
   top: 70px;
   width: 250px;
