@@ -75,25 +75,28 @@
 
 </div>
             </div>
-            
-            <!--<div class="main-container">
-                <div class="card">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="card">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-                <div class="card">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                </div>
-            </div>
-            
-        </div> -->
         
         <!--sidebar end-->
+
+        <div class="banner">
+                <h1 class="banner-heading"> Cosmic Talks</h1>
+                <span class="des">A blogging site dedicated to the wonders of the space!</span>
+            </div>
+
+
             <!--main container start-->
 
         <div class="main-container">
+            <!--<div class="banner">
+                <h1> <span class="banner-heading">Cosmic Talks</span></h1>
+                <span class="des">A blogging site dedicated to the wonders of the space!</span>
+            </div> -->
+
+
+
+
+
+
     {% for article in articles %}
     <div class="card">
         <h2><a href="{% url 'articles:detail' slug=article.slug %}"> {{ article.title }} </a></h2>
