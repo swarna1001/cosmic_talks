@@ -92,9 +92,9 @@
     
         {% for article in articles %}
             <div class="card">
-                <h2><a href="{% url 'articles:detail' slug=article.slug %}"> {{ article.title }} </a></h2>
-                <p>{{ article.snippet }} <a class="read-more" href="{% url 'articles:detail' slug=article.slug %}">&raquo;</a></p>
-                <p>{{ article.date }}</p>
+                <h2 style="font-family: Georgia; color:Yellow;"><a href="{% url 'articles:detail' slug=article.slug %}"> {{ article.title }} </a></h2>
+                <p style="font-family:Times New Roman;">{{ article.snippet }} <a class="read-more" href="{% url 'articles:detail' slug=article.slug %}"><span style="color:Blue;"> &raquo; </span></a></p>
+                <p style="font-family: Arial; color:#556b2f;">{{ article.date }}</p>
             </div> 
 
 <!--main container end-->
