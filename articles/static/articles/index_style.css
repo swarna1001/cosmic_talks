@@ -33,7 +33,6 @@ body{
 .wrapper .header .header-menu .sidebar-btn{
   color: #fff;
   position: absolute;
-  
   font-size: 22px;
   font-weight: 900;
   cursor: pointer;
@@ -48,6 +47,37 @@ body{
 .wrapper .header .header-menu ul{
   display: flex;
 }
+
+.wrapper .header .header-menu .right-item-1 a{
+  color: #fff;
+  display: block;
+  margin: 0 10px;
+  font-size: 22px;
+  width: 90px;
+  height: 34px;
+  line-height: 35px;
+  text-align: center;
+  transition: 0.3s;
+  position: absolute;
+  top: 25%;
+  left: 80%;
+}
+
+.wrapper .header .header-menu .right-item-2 a{
+  color: #fff;
+  display: block;
+  margin: 0 10px;
+  font-size: 22px;
+  width: 100px;
+  height: 34px;
+  line-height: 35px;
+  text-align: center;
+  transition: 0.3s;
+  position: absolute;
+  top: 25%;
+  left: 88%;
+}
+
 
 .wrapper .sidebar{
   z-index: 1;
