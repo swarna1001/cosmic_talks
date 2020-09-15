@@ -187,3 +187,15 @@ body{
   margin-left: 70px;  
 }
 
+.main-container .article_detail .article h2{
+	font-size: 40px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+
+}
+
+.main-container .article_detail .description{
+	font-size: 20px;
+	padding-bottom: 30px;
+}
