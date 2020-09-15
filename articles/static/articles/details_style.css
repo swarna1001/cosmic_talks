@@ -35,13 +35,13 @@ body{
 
 .wrapper .header .header-menu .sidebar-btn{
   color: #fff;
-  position: absolute;
-  
+  position: absolute;  
   font-size: 22px;
   font-weight: 900;
   cursor: pointer;
   transition: 0.3s;
   transition-property: color;
+  padding-left: 185px;
 }
 
 .wrapper .header .header-menu .sidebar-btn:hover{
@@ -152,10 +152,6 @@ body{
   margin-left: 250px;
   padding: 30px;
   background: white;
-  background: url(images/nate.jpg) no-repeat;
-  background-size: cover;
-  height: auto;
-  overflow-y: auto;
   transition: 0.3s;
 }
 
@@ -165,6 +161,10 @@ body{
 
 .wrapper.collapse .header{
   width: 70px;
+}
+
+.wrapper.collapse .header .header-menu .sidebar-btn{
+	padding-left: 0px;
 }
 
 .wrapper.collapse .sidebar .profile img,
@@ -186,17 +186,4 @@ body{
   width: calc(100% - 70px);
   margin-left: 70px;  
 }
-
-.wrapper.collapse .main-container .card{
-  margin-left: 10%;
-}
-
-.wrapper .main-container .card{
-  padding: 15px;
-  margin-bottom: 50px;
-  margin-left: 8.1%;
-  margin-top: 10%;
-  margin-right: 2%;
-  
-} 
 
