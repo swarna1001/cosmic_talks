@@ -48,6 +48,8 @@ body{
   display: flex;
 }
 
+/* signup - signin button styling 
+
 .wrapper .header .header-menu .right-item-1 a{
   color: #fff;
   display: block;
@@ -58,6 +60,7 @@ body{
   line-height: 35px;
   text-align: center;
   transition: 0.3s;
+  transition-property: color;
   position: absolute;
   top: 25%;
   left: 80%;
@@ -73,10 +76,19 @@ body{
   line-height: 35px;
   text-align: center;
   transition: 0.3s;
+  transition-property: color;
   position: absolute;
   top: 25%;
   left: 88%;
 }
+
+.wrapper .header .header-menu .right-item-1 a:hover{
+  color: #4CCEE8;
+}
+
+.wrapper .header .header-menu .right-item-2 a:hover{
+  color: #4CCEE8;
+} */
 
 
 .wrapper .sidebar{
